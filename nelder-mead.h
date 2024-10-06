@@ -5,6 +5,11 @@
 #include <stdexcept>
 #include <vector>
 
+#ifdef WIN32
+// https://pt.stackoverflow.com/questions/205552/c-visual-studio
+#include <iso646.h>
+#endif
+
 namespace nelder_mead {
 
 template <typename T> class Vec {
